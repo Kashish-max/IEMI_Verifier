@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Calibre;
+}
+
+h1, h2, h3, p {
+    color: #ccd6f6;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+p {
+    font-weight: 400;
+    color: #8892b0;
+    line-height: 1.5;
+    font-size: 20px;
+    max-width: 555px;
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.page::before {
+    content: "";
+    position: absolute;
+    left: 66px;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    bottom: 10vh;
+    background: #a8b2d1;
+}
+
+.page::after {
+    content: "";
+    position: absolute;
+    left: 70px;
+    height: 20vh;
+    width: 1px;
+    border-radius: 50%;
+    bottom: 15vh;
+    background: #a8b2d1;
+}
+
+.content {
+    width: 1000px;
+    padding-top: 120px;
+    text-align: center;
+}
+
+.header {
+    text-align: -webkit-center;
+}
+
+.header h2 {
+    font-size: 25px;
+    font-family: monospace;
+    margin: 10px 0 10px;
+}
+
+.header p {
+    margin-top: 4px;
+}
+
+.form {
+    margin-top: 30px;
+}
+
+.form h2 {
+    font-family: monospace;
+    font-size: 25px;
+}
+
+.form h2.response {
+    padding-top: 20px;
+    font-size: 20px;
+    color: var(--res);
+    max-width: 360px;
+    line-height: 1.5;
+    margin: 0 auto;
+}
+
+.myself {
+    font-size: 70px;
+}
+
+.form input {
+    color: #64ffda;
+    background: transparent;
+    border: 1px solid #64ffda;
+    border-radius: 4px;
+    padding: 1.25rem 1.75rem;
+    font-size: 14px;
+    font-family: monospace;
+    line-height: 1;
+    text-decoration: none;
+    /* cursor: pointer; */
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    margin: 10px 10px;
+    text-align: center;
+}
+
+.form input:hover {
+    background: rgba(100, 255, 218, 0.05);
+}
+
+.form .input {
+    width: 25%;
+}
+
+.form .input::placeholder {
+    color: #8892b0;
+}
+
+footer {
+    position: absolute;
+    bottom: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+footer p {
+    font-family: monospace;
+    color: #ccc;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+footer p span {
+    color: #64ffda;
+}
