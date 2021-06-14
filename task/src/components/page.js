@@ -19,7 +19,7 @@ const Page = () => {
             }
             else {setColor("#64ffda");}
 
-            fetch(`http://localhost:3600/checkIEMI/${inputValue}`, {
+            fetch(`https://taskapi-kashish241001-gmailcom.vercel.app/checkIEMI/${inputValue}`, {
                 method: 'GET',
             })
             .then(function (response) {
@@ -57,10 +57,10 @@ const Page = () => {
                     </form>
                     <h2 className="response">{ apiRes }</h2>
                 </div>
-                <footer>
-                    <p>Built with {'<'}3 <span> by Kashish.</span></p>
-                </footer>
             </div>
+            <footer>
+                <p>Built with {'<'}3 <span> by Kashish.</span></p>
+            </footer>
         </div>
     );
 }

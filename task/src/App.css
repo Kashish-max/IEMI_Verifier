@@ -26,3 +26,12 @@
   /* transform: translateY(-50%); */
   background: #a8b2d1;
 }
+
+@media only screen and (max-width: 800px) {
+  .App::before {
+    display: none;
+  }
+  .App::after {
+    display: none;
+  }
+}
